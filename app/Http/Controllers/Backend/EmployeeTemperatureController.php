@@ -45,7 +45,7 @@ class EmployeeTemperatureController extends Controller
 
     public function destroy($id)
     {
-        EmployeeTemperature::truncate();
-        return redirect()->route('admin.employeeTemperatures.index')->with('success', 'employee temperature has been added successfully');
+        EmployeeTemperature::findOrFail($id)->delete();
+        return redirect()->route('admin.employeeTemperatures.index')->with('success', 'Employee temperature record deleted successfully.');
     }
 }
