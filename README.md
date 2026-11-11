@@ -1,5 +1,10 @@
 # ONScan
 
+## ONScan Observatory — new direction
+
+Start with [OBSERVATORY.md](OBSERVATORY.md): a dependency-free local sensor ledger, unit-aware threshold alerts, visual report and read-only MCP access. Run the included synthetic [demo.jsonl](demo.jsonl) to reproduce the report. Camera/thermal/sensor adapters emit a common observation contract; actual device drivers and AI inference are not bundled yet. The original Laravel application remains below.
+
+
 Employee-temperature dashboard prototype maintained in the [Stark Fiber Enterprise](https://starkfiber.my) repository portfolio.
 
 ## What is here
@@ -23,3 +28,4 @@ Use synthetic records during development. Do not upload employee records, creden
 ## Contributions and licence
 
 Open an issue with the affected route, expected behaviour and a redacted reproduction. Application changes should include their relevant tests. See [LICENSE](LICENSE); Laravel and other dependencies retain their own licences.
+
